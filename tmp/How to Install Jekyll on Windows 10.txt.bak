@@ -1,3 +1,20 @@
+https://github.com/alshedivat/al-folio/issues/691
+I had this problem, but solved it by including this line in the gemfile
+
+# gem 'mini_racer'
+gem 'wdm', '~> 0.1.0'
+
+>bundle exec jekyll serve --lsi
+
+to fix it, I went into gems\jekyll-imagemagick-1.4.0\lib\jekyll-imagemagick\convert.rb in my ruby directory and changed the command from convert to magick convert.
+
+https://www.vgemba.net/blog/Setup-Jekyll-WSL/
+
+sudo apt update && sudo apt upgrade -y
+sudo apt-get install -y ruby-full build-essential zlib1g-dev
+
+
+
 https://gist.github.com/CesarBMartinez/660230e7fad786b58a68cacf2cd709ad
 
 # How to Install Jekyll on Windows 10 (WSL)
